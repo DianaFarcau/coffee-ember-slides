@@ -3,4 +3,8 @@
 {{canvas-toolbar handleClick = (action 'handleToolbarButton')
   onColor = (action 'handleToolbarColor')
 }}
-{{layouts-list clickLayout=(action 'handleLayoutClick')}}
+{{layouts-list 
+  layouts=model
+  clickLayout=(action 'handleLayoutClick')
+}}
+{{outlet}}
